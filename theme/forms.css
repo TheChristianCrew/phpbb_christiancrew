@@ -4,10 +4,9 @@
 /* General form styles
 ----------------------------------------*/
 fieldset {
-	border-width: 0;
-	font-family: Verdana, Helvetica, Arial, sans-serif;
-	font-size: 1.1em;
-	padding: 0;
+	border-width: 0!important; // Override normalize.css
+	font-family: Arial;
+	padding: 0!important; // Override normalize.css
 }
 
 input {
@@ -15,7 +14,7 @@ input {
 	vertical-align: middle;
 	padding: 0 3px;
 	font-size: 1em;
-	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-family: Arial;
 }
 
 select {

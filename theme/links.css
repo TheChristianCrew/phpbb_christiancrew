@@ -9,7 +9,7 @@ a {
 }
 
 /* Titles */
-.forum-title a, .topic-title a, .posting-title a {
+h2.forum-title a, h2.topic-title a, h2.posting-title a {
 	color: #ffffff;
 }
 
