@@ -192,7 +192,7 @@ ul.linklist.bulletin > li.small-icon:before {
 	position: absolute;
 	margin: 0;
 	right: 5px;
-	top: 5px;
+	top: 10px;
 }
 
 .post-buttons > li {

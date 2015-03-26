@@ -122,6 +122,10 @@ dl.details dd {
 	border-bottom-color: #ffffff;
 }
 
+.display-options select, .bbcode-size {
+	color: #000000;
+}
+
 /* Pagination
 ---------------------------------------- */
 
