@@ -914,32 +914,28 @@ input.disabled {
 }
 
 .dropdown-extended ul li {
-	border-top-color: #B9B9B9;
+	border-top-color: #A0A0A0;
+	background-color: #404040;
 }
 
 .dropdown-extended ul li:hover {
-	background-color: #CFE1F6;
-	color: #000000;
+	background-color: #606060;
+	color: #FFFFFF;
 }
 
 .dropdown-extended .header, .dropdown-extended .footer {
-	border-color: #B9B9B9;
-	color: #000000;
+	border-color: #404040;
+	color: #FFFFFF;
 }
 
 .dropdown-extended .footer {
 	border-top-style: solid;
 	border-top-width: 1px;
+	border-color: #808080;
 }
 
 .dropdown-extended .header {
-	background: #F1F8FF;
-	background: -moz-linear-gradient(top, #F1F8FF 0%, #CADCEB 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #F1F8FF), color-stop(100%, #CADCEB));
-	background: -webkit-linear-gradient(top, #F1F8FF 0%, #CADCEB 100%);
-	background: -o-linear-gradient(top, #F1F8FF 0%, #CADCEB 100%);
-	background: -ms-linear-gradient(top, #F1F8FF 0%, #CADCEB 100%);
-	background: linear-gradient(to bottom, #F1F8FF 0%, #CADCEB 100%);
+	background-color: #336699;
 }
 
 .dropdown .pointer {
@@ -963,9 +959,9 @@ ul.linklist li.responsive-menu a.responsive-menu-link:hover:before, ul.linklist 
 }
 
 .dropdown .dropdown-contents {
-	color: #000000;
-	background: #fff;
-	border-color: #b9b9b9;
+	color: #ffffff;
+	background: #404040;
+	border-color: #606060;
 	box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -982,14 +978,14 @@ ul.linklist li.responsive-menu a.responsive-menu-link:hover:before, ul.linklist 
 }
 
 .dropdown li a {
-	color: #000000;
+	color: #ffffff;
 }
 
 /* Notifications
 ---------------------------------------- */
 
 .notification_list p.notification-time {
-	color: #4C5D77;
+	color: #AAAAAA;
 }
 
 li.notification-reported strong, li.notification-disapproved strong {
