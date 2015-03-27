@@ -281,7 +281,7 @@ li.row {
 }
 
 li.row strong {
-	color: #000000;
+	color: #a5a5a5;
 }
 
 li.header dl {
@@ -330,9 +330,9 @@ p.author {
 ----------------------------------------*/
 /* Quote block */
 blockquote {
-	background-color: #EBEADD;
+	background-color: #404040;
 	background-image: url("./images/quote.gif");
-	border-color:#DBDBCE;
+	border-color:#404040;
 }
 
 .rtl blockquote {
