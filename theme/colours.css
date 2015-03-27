@@ -87,8 +87,8 @@ table.table1 tbody tr {
 }
 
 table.table1 tbody tr:hover, table.table1 tbody tr.hover {
-	background-color: #cccc99;
-	color: #000;
+	background-color: #707070;
+	color: #ffffff;
 }
 
 table.table1 tbody td {
