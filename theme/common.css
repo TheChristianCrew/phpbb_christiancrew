@@ -219,8 +219,10 @@ ul.linklist li.responsive-menu {
 ul.linklist li.responsive-menu a.responsive-menu-link {
 	display: inline-block;
 	margin: 0 5px;
+	font-size: 16px;
 	position: relative;
 	width: 16px;
+	line-height: 22px;
 	text-decoration: none;
 }
 
