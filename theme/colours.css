@@ -898,8 +898,8 @@ input.disabled {
 /* jQuery popups
 ---------------------------------------- */
 .phpbb_alert {
-	background-color: #FFFFFF;
-	border-color: #999999;
+	background-color: #404040;
+	border-color: #505050;
 }
 .phpbb_alert .alert_close {
 	background-image: url("./images/alert_close.png");
