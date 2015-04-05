@@ -17,11 +17,11 @@
 }
 
 #cp-main .content {
-	padding: 0;
+	padding: 10px 10px 10px 0;
 }
 
 #cp-main #topicreview .content {
-	padding: 0 10px 10px;
+	padding: 10px;
 }
 
 .panel-container .panel ol {
