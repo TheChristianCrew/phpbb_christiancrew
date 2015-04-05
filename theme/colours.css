@@ -554,25 +554,25 @@ Colours and backgrounds for buttons.css
 
 /* Icon images
 ---------------------------------------- */
-.icon-acp					{ background-image: url("./images/icon_acp.gif"); }
+.icon-acp					{ background-image: url("./images/icon_acp.png"); }
 .icon-bookmark				{ background-image: url("./images/icon_bookmark.gif"); }
 .icon-bump					{ background-image: url("./images/icon_bump.gif"); }
-.icon-contact				{ background-image: url("./images/icon_pm.gif"); }
-.icon-delete-cookies		{ background-image: url("./images/icon_delete_cookies.gif"); }
+.icon-contact				{ background-image: url("./images/icon_pm.png"); }
+.icon-delete-cookies		{ background-image: url("./images/icon_delete_cookies.png"); }
 .icon-download				{ background-image: url("./images/icon_download.gif"); }
-.icon-faq					{ background-image: url("./images/icon_faq.gif"); }
-.icon-home					{ background-image: url("./images/icon_home.gif"); }
-.icon-logout				{ background-image: url("./images/icon_logout.gif"); }
+.icon-faq					{ background-image: url("./images/icon_faq.png"); }
+.icon-home					{ background-image: url("./images/icon_home.png"); }
+.icon-logout				{ background-image: url("./images/icon_logout.png"); }
 .icon-mark					{ background-image: url("./images/icon_mark.gif"); }
-.icon-mcp					{ background-image: url("./images/icon_mcp.gif"); }
-.icon-members				{ background-image: url("./images/icon_members.gif"); }
-.icon-notification			{ background-image: url("./images/icon_notification.gif"); }
+.icon-mcp					{ background-image: url("./images/icon_mcp.png"); }
+.icon-members				{ background-image: url("./images/icon_members.png"); }
+.icon-notification			{ background-image: url("./images/icon_notification.png"); }
 .icon-pages					{ background-image: url("./images/icon_pages.gif"); }
-.icon-pm					{ background-image: url("./images/icon_pm.gif"); }
-.icon-print					{ background-image: url("./images/icon_print.gif"); }
-.icon-profile				{ background-image: url("./images/icon_profile.gif"); }
-.icon-register				{ background-image: url("./images/icon_register.gif"); }
-.icon-search, .responsive-search a	{ background-image: url("./images/icon_search.gif"); }
+.icon-pm					{ background-image: url("./images/icon_pm.png"); }
+.icon-print					{ background-image: url("./images/icon_print.png"); }
+.icon-profile				{ background-image: url("./images/icon_profile.png"); }
+.icon-register				{ background-image: url("./images/icon_profile.png"); }
+.icon-search, .responsive-search a	{ background-image: url("./images/icon_search.png"); }
 .icon-search-active			{ background-image: url("./images/subforum_read.gif"); }
 .icon-search-advanced		{ background-image: url("./images/icon_search_adv.gif"); }
 .icon-search-new			{ background-image: url("./images/subforum_unread.gif"); }
@@ -581,8 +581,8 @@ Colours and backgrounds for buttons.css
 .icon-search-unread			{ background-image: url("./images/subforum_unread.gif"); }
 .icon-sendemail				{ background-image: url("./images/icon_sendemail.gif"); }
 .icon-subscribe				{ background-image: url("./images/icon_subscribe.gif"); }
-.icon-team					{ background-image: url("./images/icon_team.gif"); }
-.icon-ucp					{ background-image: url("./images/icon_ucp.gif"); }
+.icon-team					{ background-image: url("./images/icon_team.png"); }
+.icon-ucp					{ background-image: url("./images/icon_ucp.png"); }
 .icon-unsubscribe			{ background-image: url("./images/icon_unsubscribe.gif"); }
 
 /* Profile & navigation icons */
