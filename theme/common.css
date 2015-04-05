@@ -585,6 +585,10 @@ table.info tbody th {
 	margin: 0;
 }
 
+.forumbg-table {
+	margin-bottom: 20px;
+}
+
 .forumbg-table > .inner {
 	margin: 0 -1px;
 }
