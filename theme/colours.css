@@ -216,26 +216,6 @@ Colours and backgrounds for links.css
 	background-color: #FFFFFF;
 }
 
-/* Post body links */
-.postlink {
-	color: #368AD2;
-	border-bottom-color: #368AD2;
-}
-
-.postlink:visited {
-	color: #5D8FBD;
-	border-bottom-color: #5D8FBD;
-}
-
-.postlink:hover {
-	background-color: #D0E4F6;
-	color: #0D4473;
-}
-
-.signature a, .signature a:hover {
-	background-color: transparent;
-}
-
 /* Back to top of page */
 a.top {
 	background-image: url("./images/icon_back_top.png");
