@@ -130,14 +130,13 @@ dl.details dd {
 ---------------------------------------- */
 
 .pagination li a {
-	color: #5C758C;
-	background-color: #ECEDEE;
-	border-color: #B4BAC0;
+	color: #ffffff;
+	background-color: #336699;
 }
 
 .pagination li.ellipsis span {
 	background-color: transparent;
-	color:	#000000;
+	color:	#ffffff;
 }
 
 .pagination li.active span {
