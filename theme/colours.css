@@ -264,9 +264,11 @@ li.row strong {
 }
 
 li.header dl {
-	background-color: #336699;
-	border-color: #5a83ad;
-	border-bottom-color: #606060;
+	border-bottom-color: #336699;
+}
+
+li.header dd {
+	color: #808080;
 }
 
 /* Post body styles

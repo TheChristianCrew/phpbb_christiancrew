@@ -104,15 +104,14 @@ li.row strong {
 }
 
 li.header dl {
-	border-width: 1px;
-	border-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
 }
 
 li.header dt {
 	width: 100%;
 	margin-right: -440px;
 	padding: 5px 0;
-	text-indent: 10px;
 }
 
 li.header dt .list-inner {
@@ -121,7 +120,7 @@ li.header dt .list-inner {
 
 li.header dd {
 	font-size: 1em;
-	padding: 5px 0;
+	margin-top: 10px;
 }
 
 li.header dl.icon dt, li.header dl.icon dd {

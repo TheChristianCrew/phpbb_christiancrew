@@ -28,6 +28,7 @@ h2.forum-title a, h2.topic-title a, h2.posting-title a {
 /* Links on gradient backgrounds */
 .forumbg .header a, .forabg .header a, th a {
 	text-decoration: none;
+	font-size: 1.3em;
 }
 
 .forumbg .header a:hover, .forabg .header a:hover, th a:hover {
