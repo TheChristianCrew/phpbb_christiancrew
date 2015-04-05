@@ -107,14 +107,14 @@
 /* Icon images
 ---------------------------------------- */
 .small-icon {
-	background-position: 0 50%;
+	background-position: 5px 50%;
 	background-repeat: no-repeat;
 	background-image: none;
 }
 
 .small-icon > a {
 	display: inline-block;
-	padding: 0 0 0 18px;
+	padding: 0 0 0 24px;
 }
 
 ul.linklist.bulletin > li.small-icon:before {

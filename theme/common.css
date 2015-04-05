@@ -421,7 +421,6 @@ ul.linklist.bulletin > li.no-bulletin:before {
 	overflow-y: auto;
 	border: 1px solid transparent;
 	border-radius: 5px;
-	padding: 5px;
 	position: relative;
 	min-width: 40px;
 	max-height: 300px;
@@ -431,16 +430,22 @@ ul.linklist.bulletin > li.no-bulletin:before {
 }
 
 .dropdown li {
-	border-top: 1px dotted transparent;
+	border-top: 1px solid transparent;
 	float: none !important;
 	line-height: normal !important;
 	font-size: 1em !important;
 	list-style: none;
 	margin: 0;
-	padding-top: 2px;
-	padding-bottom: 2px;
 	white-space: nowrap;
 	text-align: left;
+}
+
+.dropdown li a {
+	padding: 5px 5px 5px 24px;
+}
+
+.dropdown li a:hover {
+	text-decoration: none;
 }
 
 .dropdown-contents > li {
@@ -449,10 +454,6 @@ ul.linklist.bulletin > li.no-bulletin:before {
 
 .dropdown-nonscroll > li {
 	padding-right: 0;
-}
-
-.dropdown li:first-child, .dropdown li.separator + li, .dropdown li li {
-	border-top: 0;
 }
 
 .dropdown li li:first-child {
@@ -473,13 +474,7 @@ ul.linklist.bulletin > li.no-bulletin:before {
 }
 
 .dropdown li.separator {
-	border-top: 1px solid transparent;
-	margin: 4px 0;
-	padding: 0;
-}
-
-.dropdown li.separator:first-child, .dropdown li.separator:last-child {
-	display: none !important;
+	display: none;
 }
 
 /* Responsive breadcrumbs
@@ -1195,8 +1190,4 @@ ul.linklist:after,
 
 .dropdown .clone.hidden + li.separator {
 	display: none;
-}
-
-.dropdown .clone.hidden + li {
-	border-top: none;
 }

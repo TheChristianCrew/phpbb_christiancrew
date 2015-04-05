@@ -939,15 +939,15 @@ input.disabled {
 }
 
 .dropdown .pointer {
-	border-color: #B9B9B9 transparent;
+	border-color: #808080 transparent;
 }
 
 .dropdown .pointer-inner {
-	border-color: #FFF transparent;
+	border-color: #404040 transparent;
 }
 
 .dropdown-extended .pointer-inner {
-	border-color: #F1F8FF transparent;
+	border-color: #336699 transparent;
 }
 
 ul.linklist li.responsive-menu a.responsive-menu-link:before {
@@ -970,7 +970,7 @@ ul.linklist li.responsive-menu a.responsive-menu-link:hover:before, ul.linklist 
 }
 
 .dropdown li, .dropdown li li {
-	border-color: #DCDCDC;
+	border-color: #606060;
 }
 
 .dropdown li.separator {
@@ -978,6 +978,10 @@ ul.linklist li.responsive-menu a.responsive-menu-link:hover:before, ul.linklist 
 }
 
 .dropdown li a {
+	color: #c0c0c0;
+}
+
+.dropdown li a:hover {
 	color: #ffffff;
 }
 
