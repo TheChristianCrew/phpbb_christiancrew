@@ -311,9 +311,8 @@ p.author {
 ----------------------------------------*/
 /* Quote block */
 blockquote {
-	background-color: #404040;
-	background-image: url("./images/quote.gif");
-	border-color:#404040;
+	border-color:#808080;
+	color: #c0c0c0;
 }
 
 .rtl blockquote {
@@ -322,12 +321,14 @@ blockquote {
 
 blockquote blockquote {
 	/* Nested quotes */
-	background-color:#EFEED9;
 }
 
 blockquote blockquote blockquote {
 	/* Nested quotes */
-	background-color: #EBEADD;
+}
+
+blockquote cite {
+	color: #ffffff;
 }
 
 /* Code block */
