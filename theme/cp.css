@@ -174,18 +174,22 @@ ul.cplist {
 	content: '';
 	position: absolute;
 	left: 10px;
-	top: 7px;
-	height: .125em;
+	top: 12px;
+	height: .6em;
 	width: 14px;
 	border-bottom: 0.125em solid transparent;
 	border-top: 0.375em double transparent;
 }
 
 #tabs .dropdown, #minitabs .dropdown {
-	top: 20px;
-	margin-right: -2px;
+	top: 30px;
+	margin-right: -8px;
 	font-size: 1.1em;
 	font-weight: normal;
+}
+
+#tabs .dropdown li a {
+	display: block;
 }
 
 #minitabs .dropdown {
@@ -215,6 +219,7 @@ ul.cplist {
 
 #navigation ul {
 	list-style: none;
+	margin-bottom: 15px;
 }
 
 /* Default list state */

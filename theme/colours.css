@@ -681,11 +681,11 @@ Colours and backgrounds for cp.css
 /* Responsive tabs
 ----------------------------------------*/
 .responsive-tab .responsive-tab-link:before {
-	border-color: #536482;
+	border-color: #808080;
 }
 
 .responsive-tab .responsive-tab-link:hover:before {
-	border-color: #D31141;
+	border-color: #ffffff;
 }
 
 /* UCP navigation menu
@@ -697,13 +697,15 @@ Colours and backgrounds for cp.css
 }
 
 #navigation a:hover, #navigation #active-subsection a {
-	color: #ffffff;;
+	color: #ffffff;
+	background: #6699cc;
 }
 
 @media only screen and (max-width: 900px), only screen and (max-device-width: 900px)
 {
 	#navigation a, .rtl #navigation a {
-		background: #B2C2CF;
+		background: #336699;
+		color: #ffffff;
 	}
 }
 
