@@ -1,0 +1,43 @@
+/**
+ * Forum list/topic list/stats headers
+ */
+$header-bg-color: #505050;
+$header-text-color: #ffffff;
+$header-link-color: #ffffff;
+$header-link-hover-color: darken(#ffffff, 20%);
+
+/**
+ * Panels
+ */
+$panel-bg-color: #dddddd;
+
+/**
+ * Navbars
+ */
+$navbar-bg-color: #dddddd;
+
+/**
+ * Alternating background colors
+ */
+$bg1-bg-color: transparent;
+$bg2-bg-color: #f1f1f1;
+
+/**
+ * Post Profiles
+ */
+$profile-rank-bg-color: #ffffff;
+$profile-rank-text-color: #202020;
+
+/**
+ * General
+ */
+$border-radius: 3px;
+$spacing: 10px;
+
+/**
+ * Screen sizes
+ */
+ $screen-lg: 1024px;
+ $screen-md: 768px;
+ $screen-sm: 512px;
+ $screen-xs: 375px;

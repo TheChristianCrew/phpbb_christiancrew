@@ -12,10 +12,6 @@ html {
 	height: auto;
 }
 
-body {
-	padding: 0;
-}
-
 #wrap {
 	border: none;
 	border-radius: 0;
@@ -26,11 +22,6 @@ body {
 
 /* Common block wrappers
 ----------------------------------------*/
-.headerbar, .navbar, .forabg, .forumbg, .post, .panel {
-	border-radius: 0;
-	margin-left: -5px;
-	margin-right: -5px;
-}
 
 #cp-main .forabg, #cp-main .forumdb, #cp-main .post, #cp-main .panel {
 	border-radius: 7px;
@@ -91,7 +82,6 @@ li.header dt {
 	text-transform: none;
 	line-height: 1em;
 	font-size: 1.2em;
-	padding-bottom: 4px;
 }
 
 ul.topiclist li.header dt, ul.topiclist li.header dt .list-inner {
@@ -436,6 +426,7 @@ fieldset.polls dd.resultbar, fieldset.polls dd.poll_option_percent {
 	display: block;
 	width: auto;
 	float: none;
+	padding: 0;
 	min-height: 0;
 }
 
@@ -483,17 +474,12 @@ fieldset.polls dd.resultbar, fieldset.polls dd.poll_option_percent {
 }
 
 .has-profile .post-buttons {
-	right: 10px;
-	top: 10px;
+	right: 20px;
+	top: 15px;
 }
 
-p.author {
-	padding: 5px;
-	margin: 0;
-}
-
-.post .content {
-	padding: 10px;
+.online {
+	background-size: 40px;
 }
 
 /* Misc stuff
