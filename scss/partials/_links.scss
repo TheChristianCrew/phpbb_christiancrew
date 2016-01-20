@@ -6,7 +6,7 @@ a {
 	direction: ltr;
 	unicode-bidi: embed;
 	text-decoration: none;
-	color: #3fb7f8;
+	color: #F15824;
 }
 
 a:hover	{ text-decoration: underline; }
@@ -75,7 +75,7 @@ a.forumtitle:hover {
 a.topictitle {
 	font-weight: bold;
 	text-decoration: none;
-	color: #ffffff;
+	color: $body-text-color;
 }
 
 a.topictitle:hover {
