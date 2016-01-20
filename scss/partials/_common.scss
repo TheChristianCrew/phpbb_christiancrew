@@ -50,24 +50,22 @@ abbr {
 /* General Markup Styles
 ---------------------------------------- */
 html {
-	font-size: 100%;
-	/* Always show a scrollbar for short pages - stops the jump when the scrollbar appears. non-IE browsers */
-	height: 101%;
+	font-size: 16px;
 }
 
 body {
-	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-family: $font-stack;
 	font-size: 12px;
 	line-height: normal;
-	margin: 0;
-	padding: 10px;
+	padding: 0 ($spacing / 2);
 	word-wrap: break-word;
 	-webkit-print-color-adjust: exact;
+	background-color: $body-bg-color;
+	color: $body-text-color;
 }
 
 h1 {
 	/* Forum name */
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	margin-right: 200px;
 	margin-top: 15px;
 	font-weight: bold;
@@ -77,10 +75,8 @@ h1 {
 
 h2 {
 	/* Forum header titles */
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-weight: normal;
 	font-size: 2em;
-	margin: 0.8em 0 0.2em 0;
 	color: #28313F;
 }
 
@@ -90,19 +86,16 @@ h2.solo {
 
 h3 {
 	/* Sub-headers (also used as post headers, but defined later) */
-	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
 	text-transform: uppercase;
 	margin-bottom: 3px;
 	padding-bottom: 2px;
 	font-size: 1.05em;
 	margin-top: 20px;
-	color: #115098;
 }
 
 h4 {
 	/* Forum and topic list titles */
-	font-family: "Trebuchet MS", Verdana, Helvetica, Arial, Sans-serif;
 	font-size: 1.3em;
 }
 
@@ -178,19 +171,16 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul {
 /* Main blocks
 ---------------------------------------- */
 #wrap {
-	margin: 0 auto;
-	max-width: 1152px;
+	margin: 0 auto 40px;
+	max-width: $screen-lg;
 	min-width: 625px;
-}
-
-@media only screen and (max-width: 1220px), only screen and (max-device-width: 1220px) {
-	#wrap {
-		margin: 0 12px;
-	}
+	padding: $spacing;
+	background-color: $wrap-bg-color;
+	border-radius: $border-radius;
+	box-sizing: border-box;
 }
 
 #page-body {
-	margin: 10px 0;
 	clear: both;
 }
 
@@ -204,48 +194,25 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul {
 
 /* Round cornered boxes and backgrounds
 ---------------------------------------- */
-.headerbar {
-	margin-bottom: $spacing;
-	padding: 5px;
-	color: #FFFFFF;
-}
-
-.navbar {
-	padding: $spacing;
-	background-color: $navbar-bg-color;
-	border-radius: $border-radius;
+.searchbar {
+	max-width: $screen-lg;
+	margin: $spacing auto;
 }
 
 .forabg {
-	margin-bottom: $spacing;
 	clear: both;
 }
 
 .forumbg {
-	margin-bottom: $spacing;
 	clear: both;
 }
 
-ul.topics {
-	border: 1px solid $header-bg-color;
-	border-top: 0;
-	border-bottom-left-radius: $border-radius;
-	border-bottom-right-radius: $border-radius;
-}
-
 .panel {
-	margin-bottom: $spacing;
-	padding: $spacing;
-	border-radius: $border-radius;
-	background-color: $panel-bg-color;
 }
 
 .post {
-	padding: $spacing;
-	margin-bottom: 4px;
 	background-repeat: no-repeat;
 	background-position: 100% 0;
-	border-radius: 7px;
 	position: relative;
 }
 
@@ -254,11 +221,9 @@ ul.topics {
 }
 
 .bg1 {
-	background-color: $bg1-bg-color;
 }
 
 .bg2 {
-	background-color: $bg2-bg-color;
 }
 
 /* Horizontal lists
@@ -291,7 +256,6 @@ ul.linklist > li.rightside, p.rightside, a.rightside {
 }
 
 ul.navlinks {
-	border-top: 1px solid transparent;
 }
 
 ul.leftside {
@@ -631,8 +595,6 @@ table.table1 thead th {
 	line-height: 1.3em;
 	font-size: 1em;
 	padding: 5px;
-	background-color: $header-bg-color;
-	color: $header-text-color;
 }
 
 table.table1 thead th span {
@@ -640,7 +602,6 @@ table.table1 thead th span {
 }
 
 table.table1 tbody tr {
-	border: 1px solid $header-bg-color;
 }
 
 table.table1 td {
@@ -735,7 +696,6 @@ table.info tbody th {
 }
 
 dl.details {
-	/*font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;*/
 	font-size: 1.1em;
 }
 
@@ -791,11 +751,9 @@ fieldset.fields1 dl.pmlist dd.recipients {
 ---------------------------------------- */
 .action-bar {
 	font-size: 1.1em;
-	margin: 4px 0;
 }
 
 .forabg + .action-bar {
-	margin: 0 0 $spacing;
 }
 
 /* Pagination
@@ -988,8 +946,19 @@ fieldset.fields1 dl.pmlist dd.recipients {
 }
 
 .copyright {
-	padding: 10px;
 	text-align: center;
+	color: #505050;
+	font-weight: 700;
+	margin-top: $spacing;
+}
+
+.copyright a {
+	color: #606060;
+}
+
+.copyright a:hover {
+	color: #707070;
+	text-decoration: none;
 }
 
 .small {
@@ -1061,34 +1030,21 @@ form > p.post-notice strong {
 	display: -ms-flexbox;
 	display: flex;
 	overflow: hidden;
+	margin-top: $spacing;
 	@include bp(md) {
 		display: inline;
 	}
 
-	.stat-block-inner {
-		padding: 10px;
-	}
-
 	.stat-block {
 		flex: 1;
-		border: 1px solid $header-bg-color;
-		border-radius: $border-radius;
 		@include bp(md) {
 			flex: none;
 			width: 100%;
 			margin-bottom: 10px;
 		}
 		h3 {
-			padding: 8px 10px;
 			margin: 0;
-			background-color: $header-bg-color;
-			color: $header-text-color;
 			a {
-				color: $header-link-color;
-				&:hover {
-					color: $header-link-hover-color;
-					text-decoration: none;
-				}
 			}
 		}
 		&.statistics {
@@ -1199,7 +1155,6 @@ ul.linklist:after,
 
 .dropdown-extended .header {
 	padding: 0 10px;
-	font-family: Arial, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: bold;
 	text-align: left;
 	text-shadow: 1px 1px 1px white;
@@ -1277,7 +1232,6 @@ ul.linklist:after,
 }
 
 .notification_list p.notifications_title {
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size: 1.2em !important;
 }
 

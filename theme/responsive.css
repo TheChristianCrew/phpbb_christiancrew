@@ -77,13 +77,6 @@ html {
 
 /* .topiclist lists
 ----------------------------------------*/
-li.header dt {
-	text-align: center;
-	text-transform: none;
-	line-height: 1em;
-	font-size: 1.2em;
-}
-
 ul.topiclist li.header dt, ul.topiclist li.header dt .list-inner {
 	margin-right: 0 !important;
 	padding-right: 0;
@@ -124,13 +117,6 @@ ul.topiclist dd.mark {
 ul.topiclist.forums dt {
 	margin-right: -250px;
 }
-ul.topiclist.forums dt .list-inner {
-	margin-right: 250px;
-}
-
-ul.topiclist.forums dd.lastpost {
-	display: block;
-}
 
 ul.topiclist dd.mark {
 	display: block;
@@ -153,10 +139,6 @@ ul.topiclist.forums dd.topics dfn, ul.topiclist.topics dd.posts dfn {
 
 @media only screen and (max-width: 550px), only screen and (max-device-width: 550px) {
 	ul.topiclist.forums dt {
-		margin-right: 0;
-	}
-
-	ul.topiclist.forums dt .list-inner {
 		margin-right: 0;
 	}
 

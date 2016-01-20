@@ -7,13 +7,6 @@ ul.topiclist {
 	margin: 0;
 }
 
-ul.forums {
-	border: 1px solid $header-bg-color;
-	border-top: 0;
-	border-bottom-left-radius: $border-radius;
-	border-bottom-right-radius: $border-radius;
-}
-
 ul.topiclist li {
 	display: block;
 	list-style-type: none;
@@ -31,6 +24,20 @@ ul.topiclist li.row dl {
 ul.topiclist dt, ul.topiclist dd {
 	display: block;
 	float: left;
+}
+
+ul.topiclist dd.row-stats {
+	width: 100px;
+	@include bp(lg) {
+		display: none;
+	}
+}
+
+ul.topiclist dd.lastpost {
+	width: 330px;
+	@include bp(md) {
+		width: 200px;
+	}
 }
 
 ul.topiclist dt {
@@ -51,10 +58,12 @@ ul.topiclist.two-columns dt {
 	margin-right: -80px;
 }
 
+ul.topiclist.forums dt .list-inner {
+	margin-right: 440px;
+}
+
 ul.topiclist dt .list-inner {
 	margin-right: 440px;
-	padding-left: 5px;
-	padding-right: 5px;
 }
 
 ul.topiclist.missing-column dt .list-inner {
@@ -70,7 +79,6 @@ ul.topiclist.two-columns dt .list-inner {
 }
 
 ul.topiclist dd {
-	border-left: 1px solid transparent;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -83,43 +91,32 @@ ul.topiclist dfn {
 	width: 990px;
 }
 
-ul.topiclist li.row dt a.subforum {
-	background-image: none;
-	background-position: 0 50%;
-	background-repeat: no-repeat;
-	position: relative;
-	white-space: nowrap;
-	padding: 0 0 0 12px;
-}
-
 .forum-image {
 	float: left;
 	padding-top: 5px;
 	margin-right: 5px;
 }
 
-.row:last-child {
-	border-bottom-left-radius: $border-radius;
-	border-bottom-right-radius: $border-radius;
+ul.topiclist li.row dt a.subforum {
+	position: relative;
+	white-space: nowrap;
+	padding: 0 0 0 12px;
 }
 
 li.row strong {
 	font-weight: normal;
+	color: #808080;
 }
 
 li.header {
-	background-color: $header-bg-color;
-	border-top-left-radius: $border-radius;
-	border-top-right-radius: $border-radius;
+	border-bottom: 2px solid $header-border-color;
 }
 
 li.header dt, li.header dd {
 	line-height: 1em;
 	border-left-width: 0;
 	padding: 10px 0;
-	font-size: 1em;
-	font-family: Arial, Helvetica, sans-serif;
-	text-transform: uppercase;
+	font-size: 1.2em;
 }
 
 li.header dt {
@@ -145,7 +142,7 @@ li.header dl.icon dt, li.header dl.icon dd {
 
 li.header dl.icon dt .list-inner {
 	/* Tweak for headers alignment when folder icon used */
-	padding-left: 10px;
+	padding-left: 0;
 	padding-right: 50px;
 }
 
@@ -180,15 +177,15 @@ dl a.icon-link {						/* topic row icon links */
 	margin-left: 9px;
 }
 
-dd.posts, dd.topics, dd.views, dd.extra, dd.mark {
+dd.views, dd.extra, dd.mark {
 	width: 80px;
 	text-align: center;
 	line-height: 2.2em;
 	font-size: 1.2em;
 }
 
-dd.posts, dd.topics, dd.views {
-	width: 95px;
+dd.views {
+	width: 80px;
 }
 
 /* List in forum description */
@@ -203,11 +200,6 @@ dl.icon dt li {
 	list-style-type: inherit;
 }
 
-dd.lastpost, dd.redirect, dd.moderation, dd.time, dd.info {
-	width: 250px;
-	font-size: 1.1em;
-}
-
 dd.redirect {
 	line-height: 2.5em;
 }
@@ -218,7 +210,6 @@ dd.time {
 
 dd.lastpost > span, ul.topiclist dd.info > span, ul.topiclist dd.time > span, dd.redirect > span, dd.moderation > span {
 	display: block;
-	padding-left: 5px;
 }
 
 dd.extra, dd.mark {
@@ -260,7 +251,6 @@ dd.option {
 	margin-bottom: 0.3em !important;
 	text-transform: none;
 	border: none;
-	font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
 	line-height: 125%;
 }
 
@@ -335,8 +325,7 @@ dd.option {
 	clear: both;
 	min-height: 3em;
 	overflow: hidden;
-	line-height: 1.4em;
-	font-family: "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+	line-height: 1.5em;
 	font-size: 1em;
 	padding-bottom: 1px;
 }
@@ -361,14 +350,12 @@ dd.option {
 }
 
 .content p {
-	font-family: "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
 	font-size: 1.2em;
 	margin-bottom: 1em;
 	line-height: 1.4em;
 }
 
 dl.faq {
-	font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
 	font-size: 1.1em;
 	margin-top: 1em;
 	margin-bottom: 2em;
@@ -397,14 +384,14 @@ dl.faq dt {
 	padding: 0 2px 1px 2px;
 }
 
-/* Post author */
-p.author {
-	margin-bottom: 0.6em;
-	padding: 0 0 5px 0;
-	font-family: Verdana, Helvetica, Arial, sans-serif;
-	font-size: 1em;
-	line-height: 1.2em;
-	clear: both;
+/* Post date */
+p.date {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+p.date a {
+	color: #ffffff;
 }
 
 /* Post signature */
@@ -442,7 +429,6 @@ dd .signature {
 
 /* Post noticies */
 .notice {
-	font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
 	width: auto;
 	margin-top: 1.5em;
 	padding-top: 0.2em;
@@ -542,7 +528,6 @@ blockquote .codebox {
 }
 
 .attachbox dt {
-	font-family: Arial, Helvetica, sans-serif;
 	text-transform: uppercase;
 }
 
@@ -593,7 +578,6 @@ div.inline-attachment p {
 }
 
 dl.file {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
 	display: block;
 }
 
@@ -602,7 +586,6 @@ dl.file dt {
 	margin: 0;
 	padding: 0;
 	font-weight: bold;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
 dl.file dd {
@@ -618,7 +601,6 @@ dl.thumbnail img {
 
 dl.thumbnail dd {
 	font-style: italic;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
 .attachbox dl.thumbnail dd {
@@ -632,7 +614,6 @@ dl.thumbnail dt a:hover img {
 /* Post poll styles
 ----------------------------------------*/
 fieldset.polls {
-	font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
 }
 
 fieldset.polls dl {
@@ -676,7 +657,6 @@ fieldset.polls dd input {
 
 fieldset.polls dd div {
 	text-align: right;
-	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
 	padding: 2px 2px 0 2px;
 	overflow: visible;
@@ -697,10 +677,7 @@ fieldset.polls dd div {
 /* Poster profile block
 ----------------------------------------*/
 .postprofile {
-	margin: 5px 0 10px 0;
 	min-height: 80px;
-	border: 1px solid transparent;
-	border-width: 0 1px 0 0;
 	width: 22%;
 	float: left;
 	display: inline;
@@ -708,7 +685,6 @@ fieldset.polls dd div {
 
 .postprofile dd, .postprofile dt {
 	line-height: 1.2em;
-	margin-left: 8px;
 }
 
 .postprofile dd {
@@ -721,17 +697,17 @@ fieldset.polls dd div {
 }
 
 .postprofile dt.no-profile-rank, .postprofile dd.profile-rank, .postprofile .search-result-date {
-	margin-bottom: 10px;
+	margin: 10px 0;
 }
 
 .postprofile dd.profile-rank span {
-	background-color: $profile-rank-bg-color;
-	color: $profile-rank-text-color;
 	border-left: 15px solid transparent;
-	border-radius: $border-radius;
 	text-transform: uppercase;
 	font-size: .8em;
 	padding: 0 10px;
+	background-color: #ffffff;
+	color: #202020;
+	border-radius: $border-radius;
 }
 
 /* Post-profile avatars */

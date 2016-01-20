@@ -1,43 +1,24 @@
-/**
- * Forum list/topic list/stats headers
- */
-$header-bg-color: #505050;
-$header-text-color: #ffffff;
-$header-link-color: #ffffff;
-$header-link-hover-color: darken(#ffffff, 20%);
+/* General Markup Styles
+---------------------------------------- */
+$font-stack: "Open Sans", Arial, Helvetica, sans-serif;
 
-/**
- * Panels
- */
-$panel-bg-color: #dddddd;
+$body-bg-color: #202020;
+$body-text-color: #f1f1f1;
 
-/**
- * Navbars
- */
-$navbar-bg-color: #dddddd;
+$spacing: 20px;
 
-/**
- * Alternating background colors
- */
-$bg1-bg-color: transparent;
-$bg2-bg-color: #f1f1f1;
-
-/**
- * Post Profiles
- */
-$profile-rank-bg-color: #ffffff;
-$profile-rank-text-color: #202020;
-
-/**
- * General
- */
 $border-radius: 3px;
-$spacing: 10px;
 
-/**
- * Screen sizes
- */
- $screen-lg: 1024px;
- $screen-md: 768px;
- $screen-sm: 512px;
- $screen-xs: 375px;
+$screen-lg: 1024px;
+$screen-md: 768px;
+$screen-sm: 512px;
+$screen-xs: 375px;
+
+/* Main blocks
+---------------------------------------- */
+$wrap-bg-color: #303030;
+
+/* Content Styles
+---------------------------------------- */
+$header-border-color: #FF1433;
+$header-text-color: #f1f1f1;
