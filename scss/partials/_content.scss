@@ -28,6 +28,7 @@ ul.topiclist dt, ul.topiclist dd {
 
 ul.topiclist dd.row-stats {
 	width: 100px;
+	padding-left: $spacing;
 	@include bp(lg) {
 		display: none;
 	}
@@ -35,8 +36,12 @@ ul.topiclist dd.row-stats {
 
 ul.topiclist dd.lastpost {
 	width: 330px;
+	padding-left: $spacing;
 	@include bp(md) {
-		width: 200px;
+		width: 220px;
+	}
+	@include bp(sm) {
+		display: none;
 	}
 }
 
@@ -44,6 +49,15 @@ ul.topiclist dt {
 	width: 100%;
 	margin-right: -440px;
 	font-size: 1.1em;
+	@include bp(lg) {
+		margin-right: -330px;
+	}
+	@include bp(md) {
+		margin-right: -230px;
+	}
+	@include bp(sm) {
+		margin-right: 0;
+	}
 }
 
 ul.topiclist.missing-column dt {
@@ -60,10 +74,15 @@ ul.topiclist.two-columns dt {
 
 ul.topiclist.forums dt .list-inner {
 	margin-right: 440px;
-}
-
-ul.topiclist dt .list-inner {
-	margin-right: 440px;
+	@include bp(lg) {
+		margin-right: 330px;
+	}
+	@include bp(md) {
+		margin-right: 230px;
+	}
+	@include bp(sm) {
+		margin-right: 0;
+	}
 }
 
 ul.topiclist.missing-column dt .list-inner {
@@ -123,10 +142,6 @@ li.header dt {
 	font-weight: bold;
 	width: 100%;
 	margin-right: -440px;
-}
-
-li.header dt .list-inner {
-	margin-right: 440px;
 }
 
 li.header dd {
