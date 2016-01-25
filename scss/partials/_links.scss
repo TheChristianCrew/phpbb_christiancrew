@@ -21,8 +21,7 @@ a:hover	{ text-decoration: underline; }
 /* Links on gradient backgrounds */
 .forumbg .header a, .forabg .header a, th a {
 	text-decoration: none;
-	color: $header-text-color;
-	font-size: 1.1em;
+	color: $color-torch-red;
 }
 
 .forumbg .header a:hover, .forabg .header a:hover, th a:hover {

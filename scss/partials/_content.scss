@@ -28,7 +28,13 @@ ul.topiclist dt, ul.topiclist dd {
 
 ul.topiclist dd.row-stats {
 	width: 100px;
-	padding-left: $spacing;
+	margin-left: ($spacing / 4);
+	padding: ($spacing / 4);
+	background-color: $color-black;
+	text-align: center;
+	strong {
+		color: $color-silver-chalice;
+	}
 	@include bp(lg) {
 		display: none;
 	}
@@ -124,46 +130,24 @@ ul.topiclist li.row dt a.subforum {
 
 li.row strong {
 	font-weight: normal;
-	color: #808080;
 }
 
 li.header {
-	border-bottom: 2px solid $header-border-color;
-}
-
-li.header dt, li.header dd {
-	line-height: 1em;
-	border-left-width: 0;
-	padding: 10px 0;
-	font-size: 1.2em;
-}
-
-li.header dt {
-	font-weight: bold;
-	width: 100%;
-	margin-right: -440px;
-}
-
-li.header dd {
-	padding-left: 1px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-li.header dl.icon dt, li.header dl.icon dd {
-	min-height: 0;
-}
-
-li.header dl.icon dt .list-inner {
-	/* Tweak for headers alignment when folder icon used */
-	padding-left: 0;
-	padding-right: 50px;
+	background-color: $color-white;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 5px;
+	dl.icon dt {
+		min-height: 0;
+		.list-inner {
+			padding-left: 0;
+		}
+	}
 }
 
 /* Forum list column styles */
 dl.icon {
-	background-position: 10px 50%;		/* Position of folder icon */
+	background-position: 10px 15px;		/* Position of folder icon */
 	background-repeat: no-repeat;
 }
 
@@ -722,7 +706,6 @@ fieldset.polls dd div {
 	padding: 0 10px;
 	background-color: #ffffff;
 	color: #202020;
-	border-radius: $border-radius;
 }
 
 /* Post-profile avatars */

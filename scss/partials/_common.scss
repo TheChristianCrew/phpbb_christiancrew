@@ -60,7 +60,7 @@ body {
 	padding: 0 ($spacing / 2);
 	word-wrap: break-word;
 	-webkit-print-color-adjust: exact;
-	background-color: $body-bg-color;
+	background-color: $body-background;
 	color: $body-text-color;
 }
 
@@ -173,9 +173,8 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul {
 #wrap {
 	margin: 0 auto 40px;
 	max-width: $screen-lg;
-	padding: $spacing;
-	background-color: $wrap-bg-color;
-	border-radius: $border-radius;
+	padding: ($spacing / 2);
+	background-color: $container-background;
 	box-sizing: border-box;
 }
 
