@@ -26,81 +26,24 @@ ul.topiclist dt, ul.topiclist dd {
 	float: left;
 }
 
-ul.topiclist dd.row-stats {
-	width: 100px;
-	margin-left: ($spacing / 4);
-	padding: ($spacing / 4);
-	background-color: $color-black;
-	text-align: center;
-	strong {
-		color: $color-silver-chalice;
-	}
-	@include bp(lg) {
-		display: none;
+ul.topiclist dt {
+	width: 100%;
+	margin-right: -280px;
+}
+
+ul.topiclist dt .list-inner {
+	margin-right: 300px;
+	@include bp(md) {
+		margin-right: 0;
 	}
 }
 
 ul.topiclist dd.lastpost {
-	width: 330px;
-	padding-left: $spacing;
+	width: 280px;
+	float: right;
 	@include bp(md) {
-		width: 220px;
-	}
-	@include bp(sm) {
 		display: none;
 	}
-}
-
-ul.topiclist dt {
-	width: 100%;
-	margin-right: -440px;
-	font-size: 1.1em;
-	@include bp(lg) {
-		margin-right: -330px;
-	}
-	@include bp(md) {
-		margin-right: -230px;
-	}
-	@include bp(sm) {
-		margin-right: 0;
-	}
-}
-
-ul.topiclist.missing-column dt {
-	margin-right: -345px;
-}
-
-ul.topiclist.two-long-columns dt {
-	margin-right: -250px;
-}
-
-ul.topiclist.two-columns dt {
-	margin-right: -80px;
-}
-
-ul.topiclist.forums dt .list-inner {
-	margin-right: 440px;
-	@include bp(lg) {
-		margin-right: 330px;
-	}
-	@include bp(md) {
-		margin-right: 230px;
-	}
-	@include bp(sm) {
-		margin-right: 0;
-	}
-}
-
-ul.topiclist.missing-column dt .list-inner {
-	margin-right: 345px;
-}
-
-ul.topiclist.two-long-columns dt .list-inner {
-	margin-right: 250px;
-}
-
-ul.topiclist.two-columns dt .list-inner {
-	margin-right: 80px;
 }
 
 ul.topiclist dd {
@@ -122,13 +65,46 @@ ul.topiclist dfn {
 	margin-right: 5px;
 }
 
+.forum-description {
+	margin: 0;
+}
+
+.row-stats {
+	margin-bottom: 5px;
+	display: inline-block;
+}
+
+.subforum-list {
+	padding: 5px 5px 10px;
+	overflow: hidden;
+	li {
+		list-style: none;
+		width: 33.33%;
+		float: left;
+		a {
+			color: $color-seashell;
+			font-weight: bold;
+			padding-left: 15px;
+			&.read {
+				background: url("./images/subforum_read.gif") no-repeat 0 50%;
+			}
+			&.unread {
+				background: url("./images/subforum_unread.gif") no-repeat 0 50%;
+			}
+		}
+	}
+	@include bp(md) {
+		display: none;
+	}
+}
+
 ul.topiclist li.row dt a.subforum {
 	position: relative;
 	white-space: nowrap;
-	padding: 0 0 0 12px;
 }
 
 li.row strong {
+	color: $color-silver-chalice;
 	font-weight: normal;
 }
 
@@ -185,18 +161,6 @@ dd.views, dd.extra, dd.mark {
 
 dd.views {
 	width: 80px;
-}
-
-/* List in forum description */
-dl.icon dt ol,
-dl.icon dt ul {
-	list-style-position: inside;
-	margin-left: 1em;
-}
-
-dl.icon dt li {
-	display: list-item;
-	list-style-type: inherit;
 }
 
 dd.redirect {

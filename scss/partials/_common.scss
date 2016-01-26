@@ -1298,3 +1298,11 @@ ul.linklist:after,
 .dropdown .clone.hidden + li {
 	border-top: none;
 }
+
+/* Responsive Design
+---------------------------------------- */
+
+.responsive-hide { display: none !important; }
+.responsive-show { display: block !important; }
+.responsive-show-inline { display: inline !important; }
+.responsive-show-inline-block { display: inline-block !important; }
