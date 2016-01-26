@@ -385,12 +385,14 @@ dl.faq dt {
 
 /* Post date */
 p.date {
-	font-size: 1.2em;
+	background-color: $color-white;
 	font-weight: bold;
+	padding: ($spacing / 4);
+	text-transform: uppercase;
 }
 
 p.date a {
-	color: #ffffff;
+	color: $color-torch-red;
 }
 
 /* Post signature */
