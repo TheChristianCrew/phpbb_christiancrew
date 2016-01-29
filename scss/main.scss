@@ -1,12 +1,31 @@
+/**
+ * This is the main Sass stylesheet. It does not (or should not) contains any
+ * actual styles, but rather imports all partials
+ */
+
+/**
+ * Import fonts
+ */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
 
-@import "partials/config";
-@import "partials/mixins";
-@import "partials/common";
-@import "partials/links";
-@import "partials/content";
-@import "partials/buttons";
-@import "partials/cp";
-@import "partials/forms";
-@import "partials/colours";
-@import "partials/imageset";
+/**
+ * Import utility stylesheets (variables, mixins, etc)
+ */
+@import "utilities/variables";
+
+/**
+ * Finally, import the individual website component stylesheets
+ */
+@import "components/common";
+@import "components/links";
+@import "components/content";
+@import "components/buttons";
+@import "components/cp";
+@import "components/forms";
+@import "components/colours";
+@import "components/imageset";
+
+/**
+ * Import our shameful stylesheet...
+ */
+@import "shame";

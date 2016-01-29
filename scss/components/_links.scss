@@ -6,7 +6,6 @@ a {
 	direction: ltr;
 	unicode-bidi: embed;
 	text-decoration: none;
-	color: #F15824;
 }
 
 a:hover	{ text-decoration: underline; }
@@ -21,7 +20,6 @@ a:hover	{ text-decoration: underline; }
 /* Links on gradient backgrounds */
 .forumbg .header a, .forabg .header a, th a {
 	text-decoration: none;
-	color: $color-torch-red;
 }
 
 .forumbg .header a:hover, .forabg .header a:hover, th a:hover {
@@ -62,10 +60,10 @@ li.breadcrumbs span:first-child > a {
 
 /* Links for forum/topic lists */
 a.forumtitle {
+	font-family: "Trebuchet MS", Helvetica, Arial, Sans-serif;
+	font-size: 1.2em;
 	font-weight: bold;
 	text-decoration: none;
-	color: $body-text-color;
-	font-size: 1.3em;
 }
 
 a.forumtitle:hover {
@@ -73,9 +71,10 @@ a.forumtitle:hover {
 }
 
 a.topictitle {
+	font-family: "Trebuchet MS", Helvetica, Arial, Sans-serif;
+	font-size: 1.2em;
 	font-weight: bold;
 	text-decoration: none;
-	color: $body-text-color;
 }
 
 a.topictitle:hover {
@@ -89,10 +88,6 @@ a.lastsubject {
 
 a.lastsubject:hover {
 	text-decoration: underline;
-}
-
-.forum-title a, .topic-title a {
-	color: #ffffff;
 }
 
 /* Post body links */
@@ -112,10 +107,9 @@ a.lastsubject:hover {
 }
 
 /* Profile links */
-.postprofile a.username-coloured {
+.postprofile a, .postprofile dt.author a {
+	font-weight: bold;
 	text-decoration: none;
-	font-weight: 700;
-	font-size: 1.4em;
 }
 
 .postprofile a:hover, .postprofile dt.author a:hover {
