@@ -177,7 +177,6 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul {
 ---------------------------------------- */
 #wrap {
 	border: 1px solid transparent;
-	border-radius: 8px;
 	margin: 0 auto;
 	max-width: 1152px;
 	min-width: 625px;
@@ -229,12 +228,10 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul {
 	background: transparent none repeat-x 0 0;
 	margin-bottom: 4px;
 	padding: 5px;
-	border-radius: 7px;
 }
 
 .navbar {
 	padding: 3px 10px;
-	border-radius: 7px;
 }
 
 .forabg {
@@ -242,7 +239,6 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul {
 	margin-bottom: 4px;
 	padding: 5px;
 	clear: both;
-	border-radius: 7px;
 }
 
 .forumbg {
@@ -250,13 +246,11 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul {
 	margin-bottom: 4px;
 	padding: 5px;
 	clear: both;
-	border-radius: 7px;
 }
 
 .panel {
 	margin-bottom: 4px;
 	padding: 5px 10px;
-	border-radius: 7px;
 }
 
 .post {
@@ -264,7 +258,6 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul {
 	margin-bottom: 4px;
 	background-repeat: no-repeat;
 	background-position: 100% 0;
-	border-radius: 7px;
 	position: relative;
 }
 
@@ -446,7 +439,6 @@ ul.linklist.bulletin > li.no-bulletin:before {
 	top: 1.2em;
 	z-index: 2;
 	border: 1px solid transparent;
-	border-radius: 5px;
 	padding: 9px 0 0;
 	margin-right: -500px;
 }
@@ -531,7 +523,6 @@ ul.linklist.bulletin > li.no-bulletin:before {
 	overflow: hidden;
 	overflow-y: auto;
 	border: 1px solid transparent;
-	border-radius: 5px;
 	padding: 5px;
 	position: relative;
 	min-width: 40px;
@@ -839,7 +830,6 @@ fieldset.fields1 dl.pmlist dd.recipients {
 
 .pagination li a, .pagination li span {
 	border: 1px solid transparent;
-	border-radius: 2px;
 	display: block;
 	font-size: 0.9em;
 	font-weight: normal;
@@ -897,7 +887,6 @@ fieldset.fields1 dl.pmlist dd.recipients {
 }
 
 .row .pagination li a, .row .pagination li span {
-	border-radius: 1px;
 	padding: 1px;
 }
 
@@ -975,7 +964,6 @@ fieldset.fields1 dl.pmlist dd.recipients {
 
 #loading_indicator {
 	background: center center no-repeat;
-	border-radius: 5px;
 	display: none;
 	opacity: 0.8;
 	margin-top: -50px;
@@ -1025,7 +1013,6 @@ div.rules {
 	margin: 10px 0;
 	font-size: 1.1em;
 	padding: 5px 10px;
-	border-radius: 7px;
 }
 
 div.rules ul, div.rules ol {
@@ -1164,7 +1151,6 @@ ul.linklist:after,
 	text-transform: uppercase;
 	line-height: 3em;
 	border-bottom: 1px solid;
-	border-radius: 5px 5px 0 0;
 }
 
 .dropdown-extended .header .header_settings {
