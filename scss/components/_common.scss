@@ -60,7 +60,7 @@ body {
 	font-size: 10px;
 	line-height: normal;
 	margin: 0;
-	padding: 12px 0;
+	padding-bottom: $spacing;
 	word-wrap: break-word;
 	-webkit-print-color-adjust: exact;
 }
@@ -176,11 +176,11 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul {
 /* Main blocks
 ---------------------------------------- */
 #wrap {
-	border: 1px solid transparent;
 	margin: 0 auto;
-	max-width: 1152px;
+	max-width: $screen-lg;
 	min-width: 625px;
 	padding: 15px;
+	box-sizing: border-box;
 }
 
 @media only screen and (max-width: 1220px), only screen and (max-device-width: 1220px) {

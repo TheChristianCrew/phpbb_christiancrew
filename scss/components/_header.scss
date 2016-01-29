@@ -1,0 +1,159 @@
+/**
+ * Site Header
+ */
+
+.site-header {
+  position: relative;
+  z-index: 100;
+  height: $header-height;
+  margin-top: $spacing;
+  line-height: $header-height;
+  background-color: $header-background;
+  @include clearfix();
+}
+
+.site-title {
+  position: absolute;
+  margin: 0;
+  a {
+    display: block;
+    width: 89px;
+    height: 50px;
+    text-indent: -9999px;
+    background: url('images/logo.jpg') no-repeat;
+  }
+}
+
+.site-nav {
+  margin-left: 109px;
+  @include clearfix();
+  @include bp(md) {
+    margin: 0;
+    background-color: $color-torch-red;
+    display: block;
+    clip: rect(0 0 0 0);
+    max-height: 0;
+    overflow: hidden;
+    zoom: 1;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: block;
+    float: left;
+    list-style: none;
+    @include bp(md) {
+      float: none;
+    }
+  }
+
+  a {
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-torch-red;
+    &:hover {
+      color: $color-tree-poppy;
+    }
+    @include bp(md) {
+      color: $color-white;
+    }
+  }
+
+}
+
+.nav-toggle {
+  margin-left: 109px;
+  display: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-torch-red;
+  border: 1px solid $color-torch-red;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  @include bp(md) {
+    display: inline;
+  }
+  &:hover {
+    color: $color-white;
+    background-color: $color-torch-red;
+  }
+}
+
+.site-nav.opened {
+  max-height: 9999px;
+}
+
+.connect-links {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+    top: 0;
+    right: 10px;
+
+  li {
+    list-style: none;
+    margin-left: 5px;
+    float: left;
+  }
+
+  a {
+    color: $color-white;
+    background-color: $color-emperor;
+    padding: 4px 8px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    border-radius: 3px;
+    &:hover {
+      background-color: $color-mine-shaft-light;
+    }
+  }
+
+}
+
+#ts_btn {
+  @include bp(md) {
+    span {
+      display: none;
+    }
+  }
+}
+
+.inner-wrap {
+	position: relative;
+	max-width: $screen-lg;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.page-title {
+  max-width: $screen-lg;
+  margin: ($spacing * 2) auto ($spacing / 2);
+  h1 {
+    display: inline-block;
+    padding: 0 10px;
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: normal;
+    text-transform: uppercase;
+    color: $color-torch-red;
+    background-color: $color-white;
+  }
+}

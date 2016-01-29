@@ -9,8 +9,16 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
 
 /**
+ * Import vendor stylesheets
+ * We include this second as we might need to overwrite any styles contained
+ * therein
+ */
+@import "vendor/jquery.magnific-popup";
+
+/**
  * Import utility stylesheets (variables, mixins, etc)
  */
+@import "utilities/mixins";
 @import "utilities/variables";
 
 /**
@@ -24,6 +32,7 @@
 @import "components/forms";
 @import "components/colours";
 @import "components/imageset";
+@import "components/header";
 
 /**
  * Import our shameful stylesheet...

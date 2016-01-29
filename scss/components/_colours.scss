@@ -4,8 +4,8 @@ Colours and backgrounds for common.css
 -------------------------------------------------------------- */
 
 html, body {
-	color: #536482;
-	background-color: #F5F7FA;
+	color: $body-text-color;
+	background-color: $body-background;
 }
 
 h1 {
@@ -43,8 +43,7 @@ hr {
 /* Round cornered boxes and backgrounds
 ---------------------------------------- */
 #wrap {
-	background-color: #FFF;
-	border-color: #E6E9ED;
+	background-color: $container-background;
 }
 
 .headerbar {

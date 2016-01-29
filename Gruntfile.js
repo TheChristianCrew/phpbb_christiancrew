@@ -41,6 +41,20 @@ module.exports = function(grunt) {
     },
 
     /**
+     * grunt-contrib-uglify
+     * https://github.com/gruntjs/grunt-contrib-uglify
+     *
+     * Minifies JavaScript
+     */
+     uglify: {
+       dist: {
+         files: {
+           'template/js/cc.min.js': ['template/js/vendor/*.js', 'template/js/cc.js']
+         }
+       }
+     },
+
+    /**
      * grunt-contrib-watch
      * https://github.com/gruntjs/grunt-contrib-watch
      *
@@ -51,8 +65,12 @@ module.exports = function(grunt) {
         livereload: true
       },
       css: {
-        files: ['scss/*.scss', 'scss/components/*.scss', 'scss/utilities/*.scss'],
+        files: ['scss/*.scss', 'scss/components/*.scss', 'scss/utilities/*.scss', 'scss/vendor/*.scss'],
         tasks: ['sass', 'postcss']
+      },
+      js: {
+        files: ['template/js/vendor/*.js', 'template/js/cc.js'],
+        tasks: ['uglify']
       }
     }
 
@@ -62,6 +80,6 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
 
   // Register tasks
-  grunt.registerTask('default', ['sass', 'postcss']);
+  grunt.registerTask('default', ['sass', 'postcss', 'uglify']);
 
 }
