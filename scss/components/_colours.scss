@@ -3,11 +3,6 @@
 Colours and backgrounds for common.css
 -------------------------------------------------------------- */
 
-html, body {
-	color: $body-text-color;
-	background-color: $body-background;
-}
-
 h1 {
 	color: #FFFFFF;
 }
@@ -36,29 +31,11 @@ hr {
 	border-color: #C7C3BF;
 }
 
-.search-header {
-	box-shadow: 0 0 10px #0075B0;
-}
-
 /* Round cornered boxes and backgrounds
 ---------------------------------------- */
-#wrap {
-	background-color: $container-background;
-}
-
-.headerbar {
-	background-color: #12A3EB;
-	background-image: url("./images/bg_header.gif");
-	color: #FFFFFF;
-}
-
-.navbar {
-	background-color: #cadceb;
-}
 
 .forabg {
-	background-color: #0076b1;
-	background-image: url("./images/bg_list.gif");
+	background-color: $color-white;
 }
 
 .forumbg {
@@ -105,13 +82,6 @@ table.zebra-list tr:nth-child(even) td, ul.zebra-list li:nth-child(even) {
 
 .fieldsbg {
 	background-color: #E7E8EA;
-}
-
-/* Horizontal lists
-----------------------------------------*/
-
-ul.navlinks {
-	border-top-color: #FFFFFF;
 }
 
 /* Table styles
@@ -245,16 +215,15 @@ p.post-notice.reported:before, p.post-notice.error:before {
 Colours and backgrounds for links.css
 -------------------------------------------------------------- */
 
-a { color: #105289; }
-a:hover	{ color: #D31141; }
+a { color: $color-tree-poppy; }
 
 /* Links on gradient backgrounds */
 .forumbg .header a, .forabg .header a, th a {
-	color: #FFFFFF;
+	color: $color-torch-red;
 }
 
 .forumbg .header a:hover, .forabg .header a:hover, th a:hover {
-	color: #A8D8FF;
+	color: $color-tree-poppy;
 }
 
 /* Notification mark read link */
@@ -315,22 +284,12 @@ Colours and backgrounds for content.css
 -------------------------------------------------------------- */
 
 ul.forums {
-	background-color: #eef5f9;
-	background-image: url("./images/gradient.gif");
+	background-color: $color-mine-shaft-dark;
 }
 
-ul.topiclist li {
-	color: #4C5D77;
-}
-
-ul.topiclist dd {
-	border-left-color: #FFFFFF;
-}
-
-.rtl ul.topiclist dd {
-	border-right-color: #fff;
-	border-left-color: transparent;
-}
+ul.topiclist li { }
+ul.topiclist dd { }
+.rtl ul.topiclist dd { }
 
 ul.topiclist li.row dt a.subforum.read {
 	background-image: url("./images/subforum_read.gif");
@@ -341,29 +300,15 @@ ul.topiclist li.row dt a.subforum.unread {
 }
 
 li.row {
-	border-top-color:  #FFFFFF;
-	border-bottom-color: #00608F;
+	border-bottom-color: $color-mine-shaft-light;
 }
 
 li.row strong {
 	color: #000000;
 }
 
-li.row:hover {
-	background-color: #F6F4D0;
-}
-
-li.row:hover dd {
-	border-left-color: #CCCCCC;
-}
-
-.rtl li.row:hover dd {
-	border-right-color: #CCCCCC;
-	border-left-color: transparent;
-}
-
 li.header dt, li.header dd {
-	color: #FFFFFF;
+	color: $color-torch-red;
 }
 
 /* Post body styles

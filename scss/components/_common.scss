@@ -56,6 +56,8 @@ html {
 }
 
 body {
+	color: $body-text-color;
+	background-color: $body-background;
 	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 	font-size: 10px;
 	line-height: normal;
@@ -176,6 +178,7 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul {
 /* Main blocks
 ---------------------------------------- */
 #wrap {
+	background-color: $container-background;
 	margin: 0 auto;
 	max-width: $screen-lg;
 	min-width: 625px;
@@ -202,41 +205,21 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul {
 	margin-top: 20px;
 }
 
-.logo {
-	float: left;
-	width: auto;
-	padding: 10px 13px 0 10px;
-}
-
-.logo:hover {
-	text-decoration: none;
-}
-
-/* Site description and logo */
-#site-description {
-	float: left;
-	width: 65%;
-}
-
-#site-description h1 {
-	margin-right: 0;
-}
-
 /* Round cornered boxes and backgrounds
 ---------------------------------------- */
-.headerbar {
-	background: transparent none repeat-x 0 0;
-	margin-bottom: 4px;
-	padding: 5px;
-}
+.headerbar { }
 
 .navbar {
 	padding: 3px 10px;
+	background-color: $color-white;
+	color: $color-mine-shaft-light;
+	a {
+		color: $color-torch-red;
+	}
 }
 
 .forabg {
-	background: transparent none repeat-x 0 0;
-	margin-bottom: 4px;
+	margin-bottom: ($spacing / 2);
 	padding: 5px;
 	clear: both;
 }
@@ -283,7 +266,7 @@ ul.linklist {
 ul.linklist > li {
 	float: left;
 	font-size: 1.1em;
-	line-height: 2.2em;
+	line-height: 2.6em;
 	list-style-type: none;
 	margin-right: 7px;
 	padding-top: 1px;
@@ -298,7 +281,7 @@ ul.linklist > li.rightside, p.rightside, a.rightside {
 }
 
 ul.navlinks {
-	border-top: 1px solid transparent;
+	border-top: 1px solid $color-silver-chalice;
 }
 
 ul.leftside {
@@ -334,7 +317,7 @@ ul.linklist li.responsive-menu a.responsive-menu-link:before {
 	content: '';
 	position: absolute;
 	left: 0;
-	top: 7px;
+	top: 9px;
 	height: .125em;
 	width: 14px;
 	border-bottom: 0.125em solid transparent;
@@ -393,6 +376,12 @@ ul.linklist.bulletin > li.no-bulletin:before {
 .header-profile {
 	display: inline-block;
 	vertical-align: top;
+	background-color: $color-emperor;
+	border-radius: 3px;
+	padding: 0 5px;
+	&:hover {
+		background-color: $color-mine-shaft-light;
+	}
 }
 
 .header-avatar:hover {
