@@ -32,7 +32,7 @@ jQuery(document).ready(function($){
   });
 
   $('#ts_btn').magnificPopup({
-    type: 'inline'
+    type: 'ajax'
   });
 
 });
