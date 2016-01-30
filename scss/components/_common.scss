@@ -209,9 +209,10 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul {
 ---------------------------------------- */
 .headerbar {
 	margin-bottom: ($spacing / 2);
-	.linklist {
+	ul.linklist > li {
 		font-size: 1.2em;
-		a {
+		line-height: 2;
+		> a {
 			color: $color-white;
 		}
 	}
