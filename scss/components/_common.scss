@@ -207,7 +207,15 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul {
 
 /* Round cornered boxes and backgrounds
 ---------------------------------------- */
-.headerbar { }
+.headerbar {
+	margin-bottom: ($spacing / 2);
+	.linklist {
+		font-size: 1.2em;
+		a {
+			color: $color-white;
+		}
+	}
+}
 
 .navbar {
 	padding: 3px 10px;
