@@ -347,6 +347,9 @@ li.responsive-menu.dropdown-left .dropdown {
 
 ul.linklist .dropdown {
 	top: 22px;
+	a {
+		color: $color-emperor;
+	}
 }
 
 ul.linklist .dropdown-up .dropdown {
