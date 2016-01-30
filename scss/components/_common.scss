@@ -373,12 +373,6 @@ ul.linklist.bulletin > li.no-bulletin:before {
 .header-profile {
 	display: inline-block;
 	vertical-align: top;
-	background-color: $color-emperor;
-	border-radius: 3px;
-	padding: 0 5px;
-	&:hover {
-		background-color: $color-mine-shaft-light;
-	}
 }
 
 .header-avatar:hover {
