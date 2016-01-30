@@ -7,8 +7,14 @@ ul.topiclist {
 	margin: 0;
 }
 
+ul.topics {
+	border: 1px solid $color-emperor;
+	border-top: 0;
+}
+
 ul.forums {
 	border: 1px solid $color-emperor;
+	border-top: 0;
 }
 
 ul.topiclist li {

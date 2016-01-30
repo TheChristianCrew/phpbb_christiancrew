@@ -224,9 +224,7 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul {
 }
 
 .forumbg {
-	background: transparent none repeat-x 0 0;
-	margin-bottom: 4px;
-	padding: 5px;
+	margin-bottom: ($spacing / 2);
 	clear: both;
 }
 
