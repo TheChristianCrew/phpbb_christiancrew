@@ -7,7 +7,9 @@ ul.topiclist {
 	margin: 0;
 }
 
-ul.forums { }
+ul.forums {
+	border: 1px solid $color-emperor;
+}
 
 ul.topiclist li {
 	display: block;
@@ -32,6 +34,7 @@ ul.topiclist dt {
 	width: 100%;
 	margin-right: -440px;
 	font-size: 1.1em;
+	padding: 4px 0;
 }
 
 ul.topiclist.missing-column dt {
@@ -94,7 +97,7 @@ ul.topiclist li.row dt a.subforum {
 }
 
 li.row {
-	border-bottom: 1px solid transparent;
+	border-bottom: 1px solid $color-emperor;
 	&:last-child {
 		border-bottom: 0;
 	}
@@ -107,18 +110,18 @@ li.row strong {
 li.header dt, li.header dd {
 	line-height: 1em;
 	border-left-width: 0;
-	margin: 2px 0 4px 0;
+	margin: 5px 0;
 	padding-top: 2px;
 	padding-bottom: 2px;
 	font-size: 1em;
-	font-family: Arial, Helvetica, sans-serif;
 	text-transform: uppercase;
 }
 
 li.header dt {
 	font-weight: bold;
 	width: 100%;
-	margin-right: -440px;
+	margin-right: -445px;
+	margin-left: 5px;
 }
 
 li.header dt .list-inner {
@@ -144,7 +147,7 @@ li.header dl.icon dt .list-inner {
 
 /* Forum list column styles */
 dl.icon {
-	background-position: 10px 50%;		/* Position of folder icon */
+	background-position: 10px 10px;		/* Position of folder icon */
 	background-repeat: no-repeat;
 }
 

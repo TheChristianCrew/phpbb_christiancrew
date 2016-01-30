@@ -169,10 +169,6 @@ dl.details dd {
 /* Miscellaneous styles
 ---------------------------------------- */
 
-.copyright {
-	color: #555555;
-}
-
 .error {
 	color: #BC2A4D;
 }
@@ -214,17 +210,6 @@ p.post-notice.reported:before, p.post-notice.error:before {
 --------------------------------------------------------------
 Colours and backgrounds for links.css
 -------------------------------------------------------------- */
-
-a { color: $color-tree-poppy; }
-
-/* Links on gradient backgrounds */
-.forumbg .header a, .forabg .header a, th a {
-	color: $color-torch-red;
-}
-
-.forumbg .header a:hover, .forabg .header a:hover, th a:hover {
-	color: $color-tree-poppy;
-}
 
 /* Notification mark read link */
 .dropdown-extended a.mark_read {
@@ -297,10 +282,6 @@ ul.topiclist li.row dt a.subforum.read {
 
 ul.topiclist li.row dt a.subforum.unread {
 	background-image: url("./images/subforum_unread.gif");
-}
-
-li.row {
-	border-bottom-color: $color-mine-shaft-light;
 }
 
 li.row strong {

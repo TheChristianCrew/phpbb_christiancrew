@@ -6,6 +6,7 @@ a {
 	direction: ltr;
 	unicode-bidi: embed;
 	text-decoration: none;
+	color: $color-tree-poppy;
 }
 
 a:hover	{ text-decoration: underline; }
@@ -19,10 +20,13 @@ a:hover	{ text-decoration: underline; }
 
 /* Links on gradient backgrounds */
 .forumbg .header a, .forabg .header a, th a {
+	color: $color-torch-red;
 	text-decoration: none;
+	font-size: 1.2em;
 }
 
 .forumbg .header a:hover, .forabg .header a:hover, th a:hover {
+	color: $color-tree-poppy;
 	text-decoration: underline;
 }
 

@@ -220,7 +220,6 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul {
 
 .forabg {
 	margin-bottom: ($spacing / 2);
-	padding: 5px;
 	clear: both;
 }
 
@@ -977,8 +976,12 @@ fieldset.fields1 dl.pmlist dd.recipients {
 }
 
 .copyright {
-	padding: 5px;
+	padding-top: 10px;
 	text-align: center;
+	color: #808080;
+	a {
+		color: #c0c0c0;
+	}
 }
 
 .small {
