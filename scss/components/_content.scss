@@ -7,16 +7,6 @@ ul.topiclist {
 	margin: 0;
 }
 
-ul.topics {
-	border: 1px solid $color-emperor;
-	border-top: 0;
-}
-
-ul.forums {
-	border: 1px solid $color-emperor;
-	border-top: 0;
-}
-
 ul.topiclist li {
 	display: block;
 	list-style-type: none;
@@ -100,13 +90,6 @@ ul.topiclist li.row dt a.subforum {
 	float: left;
 	padding-top: 5px;
 	margin-right: 5px;
-}
-
-li.row {
-	border-bottom: 1px solid $color-emperor;
-	&:last-child {
-		border-bottom: 0;
-	}
 }
 
 li.row strong {
@@ -240,7 +223,7 @@ dd.option {
 	padding: 0;
 	line-height: 1.48em;
 	width: 76%;
-	float: left;
+	float: right;
 	position: relative;
 }
 
@@ -698,23 +681,20 @@ fieldset.polls dd div {
 /* Poster profile block
 ----------------------------------------*/
 .postprofile {
-	margin: 5px 0 10px 0;
 	min-height: 80px;
-	border: 1px solid transparent;
-	border-width: 0 0 0 1px;
 	width: 22%;
-	float: right;
+	float: left;
 	display: inline;
 }
 
 .postprofile dd, .postprofile dt {
 	line-height: 1.2em;
-	margin-left: 8px;
 }
 
 .postprofile dd {
 	overflow: hidden;
 	text-overflow: ellipsis;
+	color: $color-silver-chalice;
 }
 
 .postprofile strong {

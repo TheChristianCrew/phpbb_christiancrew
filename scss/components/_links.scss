@@ -6,10 +6,20 @@ a {
 	direction: ltr;
 	unicode-bidi: embed;
 	text-decoration: none;
-	color: $color-tree-poppy;
+	color: $color-white;
 }
 
 a:hover	{ text-decoration: underline; }
+
+.content a, a.postlink  {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.content a:hover, a.postlink:hover {
+	background-color: $color-white;
+	color: $color-emperor;
+}
 
 /* Coloured usernames */
 .username-coloured {
@@ -20,13 +30,12 @@ a:hover	{ text-decoration: underline; }
 
 /* Links on gradient backgrounds */
 .forumbg .header a, .forabg .header a, th a {
-	color: $color-torch-red;
+	color: $color-white;
 	text-decoration: none;
 	font-size: 1.2em;
 }
 
 .forumbg .header a:hover, .forabg .header a:hover, th a:hover {
-	color: $color-tree-poppy;
 	text-decoration: underline;
 }
 
@@ -94,16 +103,6 @@ a.lastsubject:hover {
 }
 
 /* Post body links */
-.postlink {
-	text-decoration: none;
-	border-bottom: 1px solid transparent;
-	padding-bottom: 0;
-}
-
-.postlink:hover {
-	text-decoration: none;
-}
-
 .signature a, .signature a:hover {
 	border: none;
 	text-decoration: underline;
