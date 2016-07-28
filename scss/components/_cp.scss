@@ -60,7 +60,7 @@ ul.cplist {
 }
 
 #cp-main .pm-message {
-	border: 1px solid transparent;
+	border: 1px solid #ff0000;
 	margin: 10px 0;
 	width: auto;
 	float: none;
@@ -254,7 +254,7 @@ ul.cplist {
 
 /* Friends list */
 .cp-mini {
-	margin: 10px 15px 10px 5px;
+	margin: 10px 0 10px 0;
 	max-height: 200px;
 	overflow-y: auto;
 	padding: 5px 10px;

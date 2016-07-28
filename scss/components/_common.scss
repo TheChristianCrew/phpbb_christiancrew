@@ -228,6 +228,10 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul {
 	clear: both;
 }
 
+.bg3 {
+	padding: 10px;
+}
+
 .panel {
 	margin-bottom: 4px;
 }
@@ -257,7 +261,7 @@ ul.linklist {
 }
 
 #cp-main .panel {
-	padding: 5px 10px;
+	padding: 5px 0 5px 10px;
 }
 
 ul.linklist > li {
@@ -505,7 +509,6 @@ ul.linklist.bulletin > li.no-bulletin:before {
 	z-index: 2;
 	overflow: hidden;
 	overflow-y: auto;
-	border: 1px solid transparent;
 	padding: 5px;
 	position: relative;
 	min-width: 40px;
@@ -1133,10 +1136,8 @@ ul.linklist:after,
 
 .dropdown-extended .header {
 	padding: 0 10px;
-	font-family: Arial, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: bold;
 	text-align: left;
-	text-shadow: 1px 1px 1px white;
 	text-transform: uppercase;
 	line-height: 3em;
 	border-bottom: 1px solid;
@@ -1146,6 +1147,10 @@ ul.linklist:after,
 	float: right;
 	font-weight: normal;
 	text-transform: none;
+}
+
+.dropdown-extended .header .header_settings a {
+	color: $color-white;
 }
 
 .dropdown-extended .header:after {
