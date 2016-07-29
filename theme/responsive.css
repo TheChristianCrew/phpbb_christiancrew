@@ -23,17 +23,6 @@ body {
 	min-width: 290px;
 }
 
-/* Common block wrappers
-----------------------------------------*/
-.headerbar, .navbar, .forabg, .forumbg, .post, .panel {
-	border-radius: 0;
-	margin-left: -5px;
-	margin-right: -5px;
-}
-
-#cp-main .forabg, #cp-main .forumdb, #cp-main .post, #cp-main .panel {
-	border-radius: 7px;
-}
 
 /* Logo block
 ----------------------------------------*/
