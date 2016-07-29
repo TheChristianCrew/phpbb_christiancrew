@@ -59,7 +59,7 @@ body {
 	color: $body-text-color;
 	background-color: $body-background;
 	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-	font-size: 10px;
+	font-size: 12px;
 	line-height: normal;
 	margin: 0;
 	padding-bottom: $spacing;
@@ -319,7 +319,7 @@ ul.linklist li.responsive-menu a.responsive-menu-link:before {
 	content: '';
 	position: absolute;
 	left: 0;
-	top: 9px;
+	top: 12px;
 	height: .125em;
 	width: 14px;
 	border-bottom: 0.125em solid transparent;
@@ -345,7 +345,7 @@ li.responsive-menu.dropdown-left .dropdown {
 ul.linklist .dropdown {
 	top: 22px;
 	a {
-		color: $color-emperor;
+		color: $color-torch-red;
 	}
 }
 
@@ -782,7 +782,7 @@ fieldset.fields1 dl.pmlist dd.recipients {
 /* Action-bars (container for post/reply buttons, pagination, etc.)
 ---------------------------------------- */
 .action-bar {
-	font-size: 1.1em;
+	font-size: 1em;
 	margin: 0 0 20px;
 }
 
@@ -1248,7 +1248,7 @@ ul.linklist:after,
 }
 
 #quick-links a.responsive-menu-link:before {
-	font-size: 1.455em;
+	font-size: 1.3em;
 	line-height: 16.5px;
 }
 
