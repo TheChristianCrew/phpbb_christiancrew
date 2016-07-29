@@ -38,14 +38,6 @@ hr {
 	background-color: $color-torch-red;
 }
 
-.post:target .content {
-	color: #000000;
-}
-
-.post:target h3 a {
-	color: #000000;
-}
-
 .bg1, .bg2 { background-color: $color-mine-shaft-dark; }
 
 table.zebra-list tr:nth-child(odd) td, ul.zebra-list li:nth-child(odd) {
