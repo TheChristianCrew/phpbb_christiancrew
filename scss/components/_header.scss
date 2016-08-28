@@ -27,14 +27,13 @@
 .site-nav {
   margin-left: 109px;
   @include clearfix();
-  @include bp(md) {
+  @include bp(lg) {
     margin: 0;
-    background-color: $color-torch-red;
     display: block;
-    clip: rect(0 0 0 0);
+    //clip: rect(0 0 0 0);
     max-height: 0;
     overflow: hidden;
-    zoom: 1;
+    //zoom: 1;
   }
 
   ul {
@@ -46,7 +45,7 @@
     display: block;
     float: left;
     list-style: none;
-    @include bp(md) {
+    @include bp(lg) {
       float: none;
     }
   }
@@ -63,7 +62,8 @@
     &:hover {
       color: $color-tree-poppy;
     }
-    @include bp(md) {
+    @include bp(lg) {
+      background-color: $color-torch-red;
       color: $color-white;
     }
   }
@@ -88,7 +88,7 @@
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
-  @include bp(md) {
+  @include bp(lg) {
     display: inline;
   }
   &:hover {
@@ -112,23 +112,49 @@
     list-style: none;
     margin-left: 5px;
     float: left;
+    &:nth-child(n+2) {
+      width: 32px;
+      text-align: center
+    }
+    @include bp(md) {
+      &:nth-child(1) {
+        width: 32px;
+        text-align: center;
+      }
+    }
+    @include bp(md) {
+      &:nth-child(n+1) {
+        width: 24px;
+      }
+    }
   }
 
   a {
+    display: block;
     color: $color-white;
     background-color: $color-emperor;
     padding: 4px 8px;
+    margin-top: 12px;
     font-size: 0.9rem;
+    line-height: normal;
     text-decoration: none;
     border-radius: 3px;
     &:hover {
       background-color: $color-mine-shaft-light;
     }
+    @include bp(md) {
+      padding: 2px 4px;
+      font-size: 0.8rem;
+      margin-top: 14px;
+    }
   }
 
 }
 
-#ts_btn {
+.ts-btn {
+  em {
+    font-style: normal;
+  }
   @include bp(md) {
     span {
       display: none;
