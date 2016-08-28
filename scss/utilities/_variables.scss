@@ -1,0 +1,29 @@
+/**
+ * CCGaming Global Configuration variables
+ */
+$color-black:            #000000;
+$color-emperor:          #505050;
+$color-mine-shaft-dark:  #202020;
+$color-mine-shaft-light: #353535;
+$color-seashell:         #F1F1F1;
+$color-silver-chalice:   #AAAAAA;
+$color-torch-red:        #FF1433;
+$color-tree-poppy:       #FF9E1A;
+$color-white:            #FFFFFF;
+
+$font-stack: "Open Sans", Arial, Helvetica, sans-serif;
+
+$spacing: 40px;
+
+$screen-lg: 1024px;
+$screen-md: 768px;
+$screen-sm: 512px;
+$screen-xs: 375px;
+
+$body-background:      $color-mine-shaft-dark;
+$body-text-color:      $color-seashell;
+
+$header-background: $color-white;
+$header-height: 50px;
+
+$container-background: $color-mine-shaft-light;
