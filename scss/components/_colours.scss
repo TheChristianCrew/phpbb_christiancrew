@@ -255,9 +255,7 @@ dl.faq dt {
 ----------------------------------------*/
 /* Quote block */
 blockquote {
-	background-color: #EBEADD;
-	background-image: url("./images/quote.gif");
-	border-color:#DBDBCE;
+	background-color: $color-mine-shaft-light;
 }
 
 .rtl blockquote {
@@ -266,12 +264,12 @@ blockquote {
 
 blockquote blockquote {
 	/* Nested quotes */
-	background-color:#EFEED9;
+	background-color:$color-mine-shaft-dark;
 }
 
 blockquote blockquote blockquote {
 	/* Nested quotes */
-	background-color: #EBEADD;
+	background-color: $color-mine-shaft-light;
 }
 
 /* Code block */
